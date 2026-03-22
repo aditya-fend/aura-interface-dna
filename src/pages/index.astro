@@ -1,15 +1,13 @@
 ---
+import Layout from "@/layouts/layout.astro";
 
+import { PatternLibrary } from "@/features/engine";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Aura - Interface DNA</title>
-	</head>
-	<body>
-		<h1>Main Page</h1>
-	</body>
-</html>
+<Layout>
+  <div class="flex h-screen overflow-hidden bg-background text-foreground selection:bg-primary/20">
+    <aside aria-label="Primary Navigation" class="h-full">
+      <PatternLibrary client:load />
+    </aside>
+  </div>
+</Layout>

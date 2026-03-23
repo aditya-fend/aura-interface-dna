@@ -2,6 +2,7 @@
 import Layout from "@/layouts/layout.astro";
 
 import { PatternLibrary } from "@/features/engine";
+import { CanvasArea } from "@/features/canvas";
 ---
 
 <Layout>
@@ -9,5 +10,11 @@ import { PatternLibrary } from "@/features/engine";
     <aside aria-label="Primary Navigation" class="h-full">
       <PatternLibrary client:load />
     </aside>
+
+    <div id="main-canvas" class="flex flex-1 overflow-hidden">
+      <section aria-label="Design Canvas" class="contents">
+        <CanvasArea client:visible />
+      </section>
+    </div>
   </div>
 </Layout>

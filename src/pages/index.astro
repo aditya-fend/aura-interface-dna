@@ -3,6 +3,7 @@ import Layout from "@/layouts/layout.astro";
 
 import { PatternLibrary } from "@/features/engine";
 import { CanvasArea } from "@/features/canvas";
+import { Properties } from "@/features/properties";
 ---
 
 <Layout>
@@ -15,6 +16,13 @@ import { CanvasArea } from "@/features/canvas";
       <section aria-label="Design Canvas" class="contents">
         <CanvasArea client:visible />
       </section>
+
+      <aside
+        aria-label="Properties Inspector"
+        class="flex w-64 flex-col border-l border-white/10 bg-background/50 p-4 backdrop-blur-sm"
+      >
+        <Properties client:visible />
+      </aside>
     </div>
   </div>
 </Layout>

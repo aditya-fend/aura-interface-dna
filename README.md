@@ -202,3 +202,4 @@ This project follows a real-world, professional development workflow to ensure c
 * **Event Propagation Management**: Special care was taken to prevent global keyboard shortcuts (like `Delete`) from triggering while a user is focused on input fields within the `Properties` inspector.
 * **Lean Build Strategy**: PWA and Service Worker dependencies were intentionally removed to prioritize a lightweight, fast-refreshing development environment, focusing strictly on "Interface Intelligence" core features.
 * **Strict Type Mapping**: The centralized `dna.ts` file acts as the single source of truth for all component structures, ensuring that the Engine, Store, and UI layers stay perfectly synchronized.
+* **Orientation Intelligence Guard**: Implemented a global layout guard to enforce landscape orientation, ensuring the spatial "DNA" calculations and high-fidelity canvas remain accurate across all mobile and tablet devices.

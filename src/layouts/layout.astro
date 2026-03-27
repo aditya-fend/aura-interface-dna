@@ -1,6 +1,6 @@
 ---
 import "@/styles/global.css";
-import OrientationGuard from "@/components/OrientationGuard.astro";
+import OrientationGuard from "@/components/OrientationGuard";
 
 interface Props {
   title?: string;
@@ -55,7 +55,7 @@ const ogImageURL = new URL(image, Astro.site);
     <meta name="theme-color" content="#020617" media="(prefers-color-scheme: dark)" />
   </head>
   <body class="min-h-screen bg-background text-foreground antialiased selection:bg-primary/20 selection:text-foreground font-sans">
-    <OrientationGuard />
+    <OrientationGuard client:load />
     
     <a
       href="#main-content"

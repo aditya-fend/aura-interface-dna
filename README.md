@@ -67,7 +67,9 @@ This project was created as a **portfolio showcase** for **Aura — Interface DN
     Productivity-focused keyboard mapping allowing users to instantly remove selected nodes using `Delete` or `Backspace`, with smart detection to prevent accidental deletions while typing in input fields.
 * 🧪 **Rock-Solid Stability (TDD)**
     A comprehensive testing infrastructure that ensures every interaction—from dragging a button to resizing a card—is bug-free and mathematically accurate through **Vitest** and **React Testing Library.**
-
+* 💻 **Desktop-First Environment Guard**
+    An automated environment-sensing layer that restricts access on mobile, tablet, and touch devices. This ensures that the high-precision "Interface DNA" workspace is only used on optimized desktop screens, maintaining the integrity of complex drag-and-drop and resizing mechanics.
+    
 ---
 
 ## 🧪 Testing
@@ -202,4 +204,4 @@ This project follows a real-world, professional development workflow to ensure c
 * **Event Propagation Management**: Special care was taken to prevent global keyboard shortcuts (like `Delete`) from triggering while a user is focused on input fields within the `Properties` inspector.
 * **Lean Build Strategy**: PWA and Service Worker dependencies were intentionally removed to prioritize a lightweight, fast-refreshing development environment, focusing strictly on "Interface Intelligence" core features.
 * **Strict Type Mapping**: The centralized `dna.ts` file acts as the single source of truth for all component structures, ensuring that the Engine, Store, and UI layers stay perfectly synchronized.
-* **Orientation Intelligence Guard**: Implemented a global layout guard to enforce landscape orientation, ensuring the spatial "DNA" calculations and high-fidelity canvas remain accurate across all mobile and tablet devices.
+* **Desktop-Only Optimization**: Aura is intentionally optimized for desktop environments ($width \ge 1024px$). The system includes a global guard that detects User Agents and touch capabilities to ensure users experience the full precision of the simulation engine without the constraints of mobile browsers.
